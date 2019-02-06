@@ -1,3 +1,4 @@
+require 'pry'
 class Artist
   attr_accessor :name, :songs
   @@all = []
@@ -10,6 +11,7 @@ class Artist
 
   def add_song(song)
     @songs << song
+    binding.pry
   end
 
   def save  #saves the artist name to the all array
